@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+    color: white;
+    background-color: #e266b6;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%236200ff' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/*navegation*/
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;   
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 50px;
+}
+
+/*navegation leef*/
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu_btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+/* SHOCASE*/
+hr{
+    margin: 10px 0px;
+}
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    background-image: url(/img/pexels-brotin-biswas-518543.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0px;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.showcase h2,
+.showcase p{
+    margin-bottom: 10px;
+}
+
+/* New Cards*/
+
+.new_cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;/*espaciado entre columnas*/
+    margin: 10px 0;
+}
+
+.new_cards img{
+    width: 100%;
+    height: 180px;
+}
+
+.new_cards h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.new_cards a{
+    padding: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.new_cards a:hover{
+    text-decoration: underline;
+}
+
+/*cards banner one*/
+.cards_banner_one{
+    width: 100%;
+    height: 350px;
+    background-image: url(/img/section1.jpg);
+    margin-bottom: 40px;
+}
+
+.cards_banner_one .content{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+
+.cards_banner_one p,
+.cards_banner_one h2{
+    margin: 10px 0;
+}
+
+/*cards banners two*/
+
+.cards_banner_two{
+    background: url(/img/image-five.jpg);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards_banner_two .content{
+    width: 50%;
+    padding: 100px 0 0 30px;
+    color: white;
+}
+
+/*social*/
+
+.social{
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0px 30px;
+
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/* footer links */
+.footer_links{
+background: #2f3640;
+color: #616161;
+font-size: 12px;
+padding: 35px 0;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;/* espaciado entre columnas */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer_container ul{
+    margin: 0 auto;
+}
+
+
+.footer_container ul li{
+    line-height: 2.8; /*La propiedad CSS line-height establece la altura de una casilla remarcada por líneas. Comúnmente se usa para establecer la distancia entre líneas de texto. A nivel de elementos de bloque, define la altura mínima de las casillas encuadradas por líneas dentro del elemento. En elementos en linea no reemplazables, especifica la altura que se usa para calcular la altura de la casila encuadrada por líneas.*/
+}
+
+.footer{
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    
+    .menu_btn{
+        display: block;
+    }
+
+    .nav-main ul.nav-menu{
+        display: block ;
+        position: absolute ;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+    }
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+        transition: transform .5s ease-in-out;
+    }
+   
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-reight{
+        margin-right: 40px;
+
+    }
+
+    .new_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards_banner_one .content,
+    .cards_banner_two .content{
+        width: 80%;
+    }
+
+    .footer_links .footer_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .new_cards{
+        grid-template-columns: 1fr;
+    }
+
+    .new_cards img{
+        height: 270px;
+    }
+
+    .cards_banner_one .content,
+    .cards_banner_two .content{
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer_links .footer_container{
+        grid-template-columns: 1fr;
+    }
+
+}
